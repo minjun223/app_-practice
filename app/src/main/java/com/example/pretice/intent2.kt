@@ -19,8 +19,8 @@ class intent2 : AppCompatActivity() {
             Log.d("number", ""+number2)
 
             val result = number1 + number2
-            val resultIntent = Intent()
-            resultIntent.putExtra("result", result)
+            val resultIntent = Intent()//인텐트를 열어주고
+            resultIntent.putExtra("result", result)//풋엑스트라로 값을 넣어준다.
 
             setResult(Activity.RESULT_OK, resultIntent)
             this.finish()
