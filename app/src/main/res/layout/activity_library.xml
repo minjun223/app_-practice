@@ -7,7 +7,7 @@
     tools:context=".LibraryActivity">
 
     <TextView
-        android:id="@+id/glibe"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:id="@+id/glide"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
 </LinearLayout>
