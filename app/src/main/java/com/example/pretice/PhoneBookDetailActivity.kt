@@ -20,11 +20,7 @@ class PhoneBookDetailActivity : AppCompatActivity() {
         val name = intent.getStringExtra("name")
         val number = intent.getStringExtra("number")
 
-//        person_detail_name.setText(name)
-//        person_detail_number.setText(number)
+       person_detail_name.setText(name)
+       person_detail_number.setText(number)
     }
-}
-
-private fun Any.setOnclickListener(function: () -> Unit) {
-
 }
