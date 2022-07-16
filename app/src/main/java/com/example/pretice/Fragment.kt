@@ -3,9 +3,12 @@ package com.example.pretice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_fragment.*
 
-class Fragment : AppCompatActivity(), FragementOne. OnDataPassListener{
+open class Fragment : AppCompatActivity(), FragementOne. OnDataPassListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
@@ -57,4 +60,11 @@ class Fragment : AppCompatActivity(), FragementOne. OnDataPassListener{
         Log.d("pass" ,"" + data)
     }
 
+    open fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        TODO("Not yet implemented")
+    }
 }
